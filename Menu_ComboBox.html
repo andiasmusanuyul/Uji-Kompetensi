@@ -1,0 +1,19 @@
+<div class="input-group">
+  <input type="text" class="form-control" placeholder="Pilih opsi..." id="comboInput">
+  <div class="dropdown">
+    <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      ▼
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#" onclick="selectOption('Option 1')">Option 1</a></li>
+      <li><a class="dropdown-item" href="#" onclick="selectOption('Option 2')">Option 2</a></li>
+      <li><a class="dropdown-item" href="#" onclick="selectOption('Option 3')">Option 3</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function selectOption(value) {
+    document.getElementById("comboInput").value = value;
+  }
+</script>
